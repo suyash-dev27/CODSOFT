@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background: linear-gradient(to right, #000000, #1a1a1a);
+}
+
+nav {
+  background-color: #121212;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #b84eff;
+}
+
+nav .links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav .links a:hover {
+  color: #b84eff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-card {
+  margin-top: 40px;
+}
+
+.hero-image {
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #bbb;
+}
+
+.buttons button {
+  padding: 10px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #b84eff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buttons .secondary {
+  background: transparent;
+  border: 1px solid #888;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-box {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.feature-box img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.feature-box h4 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.feature-box p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.about {
+  max-width: 700px;
+  margin: 60px auto 20px;
+  color: #ccc;
+  font-size: 15px;
+  text-align: center;
+}
+
+.about img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.about h2 {
+  margin: 15px 0 10px;
+  color: #fff;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  color: gray;
+}
+
+footer .socials img {
+  width: 24px;
+  margin: 0 10px;
+  filter: brightness(0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .links {
+    margin-top: 10px;
+  }
+
+  nav .links a {
+    display: block;
+    margin: 5px 0;
+  }
+}
