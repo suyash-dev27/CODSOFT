@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suyash Yadav | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Suyash Yadav</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="dark-mode-toggle">🌓</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Suyash Yadav</span></h1>
+        <p>A passionate developer crafting modern web experiences.</p>
+        <div class="buttons button-container">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <img src="suyash.jpeg" alt="Suyash Yadav" class="hero-image">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am an enthusiastic web developer skilled in frontend and backend technologies, currently expanding my portfolio and experience.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-grid">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>Bootstrap</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="project1.jpeg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>it is a landing page made with html and css to showcast some basics skills.</p>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpeg" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>it is a shopping website linked with pages it is a complete shopping website made with html css and javascript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <a class="btn" href="Suyash_Resume.pdf" download>Download Resume</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: suyashyadav972@gmail.com</p>
+    <p>Phone: +91-9867061861</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Suyash Yadav. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><img src="github.png" alt="GitHub" width="24"></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn" width="24"></a>
+    </div>
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    toggle.onclick = () => {
+      document.body.classList.toggle('dark');
+    };
+  </script>
+
+</body>
+</html>
